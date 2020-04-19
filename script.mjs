@@ -96,7 +96,7 @@ document.getElementById("intervals").addEventListener("change", () => {
     ] = ratio,
     frequencyString = (document.getElementById("zeroNote").valueAsNumber * numerator / denominator).toFixed(3);
   
-  document.getElementById("play").value = `Play: ${ratio.join("/")} (${frequencyString} Hz)`;
+  document.getElementById("play").value = `▶ Play: ${ratio.join("/")} (${frequencyString} Hz)`;
 });
 
 generateIntervals();
