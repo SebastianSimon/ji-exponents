@@ -4,10 +4,10 @@ Try it here: https://sebastiansimon.github.io/ji-exponents/
 
 ## Just Intonation
 
-In music theory, just intonation (JI) refers to musical intervals obtained from multiplying a base frequency with (simple) ratios.
+In music theory, just intonation (JI) refers to musical intervals obtained from multiplying a base frequency by (simple) ratios.
 In contrast, equal temperament (ET) equally divides an interval (like the octave) into a fixed number of equal steps.
 
-Given an interval of two notes, mathematically speaking, the frequency of one note can be obtained by multiplying it with some factor of the frequency of the other note.
+Given an interval of two notes, mathematically speaking, the frequency of one note can be obtained by multiplying it by some factor of the frequency of the other note.
 In ET these factors are almost all irrational; for example, an equal tempered fifth in 12 equal divisions of the octave (12-EDO) has a factor of 2<sup>7/12</sup> ≈ 1.4983070768766815; only octaves are exactly _times 2_.
 In JI, however, the perfect fifth has a factor of exactly 3/2 = 1.5.
 
