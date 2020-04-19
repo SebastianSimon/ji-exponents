@@ -1,0 +1,13 @@
+#intervals{
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  line-height: 2.5rem;
+}
+#intervals > span{
+  white-space: nowrap;
+}
+#intervals > span > sup{
+  transform: translateY(-20%);
+  display: inline-block;
+}
+
