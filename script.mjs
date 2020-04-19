@@ -1,7 +1,9 @@
+/* eslint no-unused-vars: [ "error", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" } ] */
+/* eslint no-trailing-spaces: [ "error", { "skipBlankLines": true } ] */
+
 import wav from "./wav.mjs";
 
-const removeNodes = (node) => node.remove(),
-  amplitude = (() => {
+const amplitude = (() => {
     const baseAmplitude = 0.4;
     
     return (portion) => {
@@ -11,9 +13,8 @@ const removeNodes = (node) => node.remove(),
       else if(portion > 0.9){
         return (portion * -10 + 10) * baseAmplitude;
       }
-      else {
-        return baseAmplitude;
-      }
+      
+      return baseAmplitude;
     };
   })(),
   sine = (() => {
