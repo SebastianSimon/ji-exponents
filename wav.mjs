@@ -8,7 +8,7 @@ export default function wav(randCurve){
       4: Uint32Array
     },
     typedNumber = (dataLength, bytes = 4) => {
-      const TypedArray = (arrayTypes[bytes] || Uint8ClampedArray),
+      const TypedArray = arrayTypes[bytes] ?? Uint8ClampedArray,
         array = new Uint8ClampedArray(new TypedArray([dataLength]).buffer);
     
       return littleEndian
@@ -22,8 +22,8 @@ export default function wav(randCurve){
       sampleRate: 44100
     },
     wavSettings = {
-      riff: [..."RIFF"].map(toChar),
-      wave: [..."WAVEfmt "].map(toChar),
+      riff: Array.from("RIFF", toChar),
+      wave: Array.from("WAVEfmt ", toChar),
       fmtLength: typedNumber(16, 4),
       formatTag: typedNumber(1, 2), // PCM
       channels: typedNumber(wavProps.channels, 2),
@@ -31,7 +31,7 @@ export default function wav(randCurve){
       bytesPerSec: typedNumber(wavProps.sampleRate * wavProps.bytesPerSample, 4),
       blockAlign: typedNumber(wavProps.channels * Math.floor((wavProps.bytesPerSample * 8 + 7) / 8), 2),
       bitsPerSample: typedNumber(wavProps.bytesPerSample * 8, 2),
-      data: [..."data"].map(toChar)
+      data: Array.from("data", toChar)
     },
     wavProp = (prop) => Array.from(wavSettings[prop]),
     lengthPlaceholder = new Array(4).fill(0),
