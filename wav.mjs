@@ -64,11 +64,3 @@ export default function wav(randCurve){
       type: "audio/x-wav"
     }));
 }
-
-/*
-
-secs = 20; rate = 0.1; ratio = [5, 8]; hitLength = 1000;
-new Audio(wav(Array.from({length: 44100 * secs}, (_, i) => (i % (44100 * (ratio[0] * rate)) <= hitLength ? (i % 150 ? 0.7 : -0.7) : 0)))).play();
-new Audio(wav(Array.from({length: 44100 * secs}, (_, i) => (i % (44100 * (ratio[1] * rate)) <= hitLength ? (i % 100 ? 0.7 : -0.7) : 0)))).play();
-
-*/
