@@ -13,6 +13,8 @@ In JI, however, the perfect fifth has a factor of exactly 3/2 = 1.5.
 
 Here’s [a table of some common intervals][wiki] on Wikipedia.
 
+And here’s [an extended table of intervals][huygens-fokker].
+
 ### 5-limit tuning
 
 The twelve different notes used in western music can all be obtained by multiplying or dividing frequencies by positive integers _up to 5_.
@@ -39,3 +41,4 @@ The button also shows the resulting frequency.
 
 
   [wiki]: https://en.wikipedia.org/wiki/Music_and_mathematics#Just_tunings
+  [huygens-fokker]: http://www.huygens-fokker.org/docs/intervals.html
